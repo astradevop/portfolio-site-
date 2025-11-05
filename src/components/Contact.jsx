@@ -12,82 +12,76 @@ function Contact() {
   }
 
   return (
-    <section id="contact" className="py-20 lg:py-32 bg-white relative overflow-hidden">
-      {/* Background Decoration */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
-        <div className="absolute bottom-20 right-20 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
-      </div>
-
+    <section id="contact" className="py-20 lg:py-32 relative overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-          Get In Touch
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-4 bg-gradient-to-r from-pink-500 to-teal-400 bg-clip-text text-transparent">
+          Let's Work Together
         </h2>
-        <p className="text-center text-gray-600 text-lg mb-16 max-w-2xl mx-auto">
-          I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+        <p className="text-center text-gray-400 text-lg mb-16 max-w-2xl mx-auto">
+          I'm always excited to collaborate on innovative projects. Whether you have a question or just want to say hi, feel free to reach out!
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div className="space-y-8">
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 shadow-xl border border-blue-100">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
-              <p className="text-gray-700 mb-8 leading-relaxed">
+            <div className="glass rounded-2xl p-8 shadow-xl hover:shadow-pink-500/20 transition-all duration-300">
+              <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
+              <p className="text-gray-300 mb-8 leading-relaxed">
                 Feel free to reach out if you'd like to collaborate or have any questions. I'm always happy to connect!
               </p>
               
               <div className="space-y-4">
                 <div className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-teal-400 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500 font-medium">Email</p>
-                    <a href="mailto:akash.bmrskr@gmail.com" className="text-blue-600 font-semibold hover:text-purple-600 transition-colors">
+                    <p className="text-sm text-gray-400 font-medium">Email</p>
+                    <a href="mailto:akash.bmrskr@gmail.com" className="text-teal-400 font-semibold hover:text-pink-400 transition-colors">
                       akash.bmrskr@gmail.com
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 bg-gradient-to-r from-teal-400 to-pink-500 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500 font-medium">Phone</p>
-                    <a href="tel:+918848080655" className="text-blue-600 font-semibold hover:text-purple-600 transition-colors">
+                    <p className="text-sm text-gray-400 font-medium">Phone</p>
+                    <a href="tel:+918848080655" className="text-teal-400 font-semibold hover:text-pink-400 transition-colors">
                       +91 88480 80655
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-teal-400 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500 font-medium">Location</p>
-                    <p className="text-gray-900 font-semibold">Kottayam, Kerala</p>
+                    <p className="text-sm text-gray-400 font-medium">Location</p>
+                    <p className="text-white font-semibold">Kottayam, Kerala</p>
                   </div>
                 </div>
               </div>
 
               {/* Social Links */}
-              <div className="mt-8 pt-8 border-t border-gray-200">
-                <p className="text-sm text-gray-500 font-medium mb-4">Connect with me</p>
+              <div className="mt-8 pt-8 border-t border-white/10">
+                <p className="text-sm text-gray-400 font-medium mb-4">Connect with me</p>
                 <div className="flex gap-4">
                   <a 
                     href="https://linkedin.com/in/aakash-s-nair" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white shadow-lg hover:bg-blue-700 hover:scale-110 transform transition-all duration-200"
+                    className="w-12 h-12 bg-gradient-to-r from-pink-500 to-teal-400 rounded-lg flex items-center justify-center text-white shadow-lg hover:shadow-xl hover:shadow-pink-500/50 hover:scale-110 transform transition-all duration-200"
                     aria-label="LinkedIn profile"
                   >
                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -98,7 +92,7 @@ function Contact() {
                     href="https://github.com/astradevop" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center text-white shadow-lg hover:bg-purple-700 hover:scale-110 transform transition-all duration-200"
+                    className="w-12 h-12 bg-gradient-to-r from-teal-400 to-pink-500 rounded-lg flex items-center justify-center text-white shadow-lg hover:shadow-xl hover:shadow-teal-500/50 hover:scale-110 transform transition-all duration-200"
                     aria-label="GitHub profile"
                   >
                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -111,11 +105,11 @@ function Contact() {
           </div>
           
           {/* Contact Form */}
-          <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 shadow-xl border border-gray-200">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Send a Message</h3>
+          <div className="glass rounded-2xl p-8 shadow-xl hover:shadow-pink-500/20 transition-all duration-300">
+            <h3 className="text-2xl font-bold text-white mb-6">Send a Message</h3>
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="email" className="block text-sm font-semibold text-gray-300 mb-2">
                   Your Email
                 </label>
                 <input 
@@ -125,11 +119,11 @@ function Contact() {
                   required 
                   aria-required="true"
                   placeholder="your.email@example.com"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white shadow-sm hover:shadow-md focus:shadow-lg"
+                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200 text-white placeholder-gray-500 shadow-sm hover:bg-white/10 focus:bg-white/10"
                 />
               </div>
               <div>
-                <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="subject" className="block text-sm font-semibold text-gray-300 mb-2">
                   Subject
                 </label>
                 <input 
@@ -139,11 +133,11 @@ function Contact() {
                   required 
                   aria-required="true"
                   placeholder="Project inquiry"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white shadow-sm hover:shadow-md focus:shadow-lg"
+                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200 text-white placeholder-gray-500 shadow-sm hover:bg-white/10 focus:bg-white/10"
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-semibold text-gray-300 mb-2">
                   Message
                 </label>
                 <textarea 
@@ -153,14 +147,15 @@ function Contact() {
                   required 
                   aria-required="true"
                   placeholder="Your message here..."
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white shadow-sm hover:shadow-md focus:shadow-lg resize-none"
+                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200 text-white placeholder-gray-500 shadow-sm hover:bg-white/10 focus:bg-white/10 resize-none"
                 ></textarea>
               </div>
               <button 
                 type="submit" 
-                className="w-full px-6 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 hover:from-blue-700 hover:to-purple-700"
+                className="w-full px-6 py-4 bg-gradient-to-r from-pink-500 to-teal-400 text-white rounded-lg font-bold text-lg shadow-lg hover:shadow-xl hover:shadow-pink-500/50 transform hover:scale-105 transition-all duration-200 relative overflow-hidden"
               >
-                Send Message
+                <span className="relative z-10">Send Message</span>
+                <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] hover:translate-x-[100%] transition-transform duration-500"></span>
               </button>
             </form>
           </div>

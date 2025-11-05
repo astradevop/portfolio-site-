@@ -1,34 +1,39 @@
 function ProjectCard({ project }) {
   return (
-    <article className="group relative bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200 overflow-hidden transform hover:scale-105">
+    <article className="group relative glass rounded-2xl p-6 shadow-xl hover:shadow-2xl hover:shadow-pink-500/20 transition-all duration-300 overflow-hidden transform hover:scale-105 cursor-pointer">
       {/* Gradient Background on Hover */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 to-teal-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       
       <div className="relative z-10">
+        {/* Project Icon */}
+        <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-teal-400 rounded-xl flex items-center justify-center text-2xl mb-4 shadow-lg">
+          🚀
+        </div>
+
         {/* Header */}
         <div className="flex items-start justify-between mb-4">
-          <h3 className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors flex-1">
+          <h3 className="text-2xl font-bold text-white group-hover:text-pink-400 transition-colors flex-1">
             {project.title}
           </h3>
           {project.projectType && (
-            <span className="ml-2 px-3 py-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs font-semibold rounded-full shadow-lg whitespace-nowrap">
+            <span className="ml-2 px-3 py-1 bg-gradient-to-r from-pink-500 to-teal-400 text-white text-xs font-semibold rounded-full shadow-lg whitespace-nowrap">
               {project.projectType}
             </span>
           )}
         </div>
         
         {/* Description */}
-        <p className="text-gray-600 mb-6 leading-relaxed">
+        <p className="text-gray-300 mb-6 leading-relaxed">
           {project.description}
         </p>
         
         {/* Key Features */}
         <div className="mb-6">
-          <h4 className="text-sm font-bold text-gray-900 mb-3 uppercase tracking-wide">Key Features:</h4>
+          <h4 className="text-sm font-bold text-white mb-3 uppercase tracking-wide">Key Features:</h4>
           <ul className="space-y-2">
             {project.features.map((feature, index) => (
-              <li key={index} className="flex items-start gap-2 text-sm text-gray-600">
-                <svg className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <li key={index} className="flex items-start gap-2 text-sm text-gray-300">
+                <svg className="w-5 h-5 text-teal-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span>{feature}</span>
@@ -39,12 +44,12 @@ function ProjectCard({ project }) {
 
         {/* Tech Stack */}
         <div className="mb-6">
-          <h4 className="text-sm font-bold text-gray-900 mb-3 uppercase tracking-wide">Tech Stack:</h4>
+          <h4 className="text-sm font-bold text-white mb-3 uppercase tracking-wide">Tech Stack:</h4>
           <div className="flex flex-wrap gap-2">
             {project.techStack.map((tech, index) => (
               <span 
                 key={index} 
-                className="px-3 py-1 bg-gradient-to-r from-purple-600 to-blue-600 text-white text-xs font-semibold rounded-full shadow-md hover:shadow-lg transform hover:scale-105 transition-all"
+                className="px-3 py-1 bg-gradient-to-r from-teal-500 to-pink-500 text-white text-xs font-semibold rounded-full shadow-md hover:shadow-lg transform hover:scale-105 transition-all"
               >
                 {tech}
               </span>
@@ -53,12 +58,12 @@ function ProjectCard({ project }) {
         </div>
 
         {/* GitHub Link */}
-        <div className="mt-6 pt-4 border-t border-gray-200">
+        <div className="mt-6 pt-4 border-t border-white/10">
           <a 
             href={project.githubLink} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl w-full justify-center group"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-pink-500 to-teal-400 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-pink-500/50 transform hover:scale-105 transition-all duration-200 w-full justify-center group"
             aria-label={`View ${project.title} on GitHub`}
           >
             <svg className="w-5 h-5 group-hover:rotate-12 transition-transform" fill="currentColor" viewBox="0 0 24 24">

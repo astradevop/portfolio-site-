@@ -2,18 +2,12 @@ function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-12 relative overflow-hidden">
-      {/* Background Decoration */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
-      </div>
-
+    <footer className="relative py-12 border-t border-white/10 text-white overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">
+            <h3 className="text-2xl font-bold bg-gradient-to-r from-pink-400 to-teal-400 bg-clip-text text-transparent mb-4">
               AKASH S NAIR
             </h3>
             <p className="text-gray-400 leading-relaxed">
@@ -23,20 +17,20 @@ function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-4 text-white">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#about" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+                <a href="#about" className="text-gray-400 hover:text-pink-400 transition-colors duration-200">
                   About
                 </a>
               </li>
               <li>
-                <a href="#projects" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+                <a href="#projects" className="text-gray-400 hover:text-pink-400 transition-colors duration-200">
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+                <a href="#contact" className="text-gray-400 hover:text-pink-400 transition-colors duration-200">
                   Contact
                 </a>
               </li>
@@ -45,21 +39,21 @@ function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contact</h4>
+            <h4 className="text-lg font-semibold mb-4 text-white">Contact</h4>
             <ul className="space-y-2 text-gray-400">
               <li className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <a href="mailto:akash.bmrskr@gmail.com" className="hover:text-blue-400 transition-colors">
+                <a href="mailto:akash.bmrskr@gmail.com" className="hover:text-pink-400 transition-colors">
                   akash.bmrskr@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <a href="tel:+918848080655" className="hover:text-purple-400 transition-colors">
+                <a href="tel:+918848080655" className="hover:text-teal-400 transition-colors">
                   +91 88480 80655
                 </a>
               </li>
@@ -73,7 +67,7 @@ function Footer() {
             href="https://linkedin.com/in/aakash-s-nair" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white shadow-lg hover:bg-blue-700 hover:scale-110 transform transition-all duration-200"
+            className="w-12 h-12 bg-gradient-to-r from-pink-500 to-teal-400 rounded-lg flex items-center justify-center text-white shadow-lg hover:shadow-xl hover:shadow-pink-500/50 hover:scale-110 transform transition-all duration-200"
             aria-label="LinkedIn profile"
           >
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -84,7 +78,7 @@ function Footer() {
             href="https://github.com/astradevop" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center text-white shadow-lg hover:bg-purple-700 hover:scale-110 transform transition-all duration-200"
+            className="w-12 h-12 bg-gradient-to-r from-teal-400 to-pink-500 rounded-lg flex items-center justify-center text-white shadow-lg hover:shadow-xl hover:shadow-teal-500/50 hover:scale-110 transform transition-all duration-200"
             aria-label="GitHub profile"
           >
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -93,7 +87,7 @@ function Footer() {
           </a>
           <a 
             href="mailto:akash.bmrskr@gmail.com"
-            className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center text-white shadow-lg hover:scale-110 transform transition-all duration-200"
+            className="w-12 h-12 bg-gradient-to-r from-pink-500 to-teal-400 rounded-lg flex items-center justify-center text-white shadow-lg hover:shadow-xl hover:shadow-pink-500/50 hover:scale-110 transform transition-all duration-200"
             aria-label="Email"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -103,7 +97,7 @@ function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-gray-700 pt-8 text-center">
+        <div className="border-t border-white/10 pt-8 text-center">
           <p className="text-gray-400">
             &copy; {currentYear} AKASH S NAIR. All rights reserved.
           </p>

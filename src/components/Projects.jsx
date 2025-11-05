@@ -26,7 +26,7 @@ function Projects() {
     {
       id: 2,
       title: "Portfolio Website",
-      description: "A responsive portfolio website built with React and Vite, showcasing projects and professional experience. Features modern UI with CSS variables and semantic HTML.",
+      description: "A responsive portfolio website built with React and Vite, showcasing projects and professional experience. Features modern UI with dark theme and glassmorphism effects.",
       techStack: [
         "React", "Vite", "JavaScript (ES6+)", "CSS3", "HTML5", "Tailwind CSS"
       ],
@@ -34,7 +34,7 @@ function Projects() {
         "Responsive design with Flexbox and Grid",
         "Semantic HTML for accessibility",
         "Fast build with Vite",
-        "Modern CSS with Tailwind CSS",
+        "Modern dark theme with glassmorphism",
         "Smooth animations and transitions"
       ],
       githubLink: "https://github.com/astradevop",
@@ -61,18 +61,12 @@ function Projects() {
   ]
 
   return (
-    <section id="projects" className="py-20 lg:py-32 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 relative overflow-hidden">
-      {/* Background Decoration */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
-      </div>
-
+    <section id="projects" className="py-20 lg:py-32 relative overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-          Projects
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-4 bg-gradient-to-r from-pink-500 to-teal-400 bg-clip-text text-transparent">
+          Featured Projects
         </h2>
-        <p className="text-center text-gray-600 text-lg mb-16 max-w-2xl mx-auto">
+        <p className="text-center text-gray-400 text-lg mb-16 max-w-2xl mx-auto">
           Explore my recent work and projects showcasing my skills in full-stack development, cloud deployment, and modern web technologies.
         </p>
         

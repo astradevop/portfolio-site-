@@ -2,55 +2,48 @@ function Hero() {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 pt-20"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20"
     >
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
-        <div className="absolute top-40 right-10 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
-        <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
-      </div>
-
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
-        {/* Name with Gradient */}
+        {/* Name with Animated Gradient */}
         <h1 
-          className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent animate-gradient"
-          style={{ backgroundSize: '300%' }}
+          className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-4 bg-gradient-to-r from-white via-pink-500 via-teal-400 to-white bg-clip-text text-transparent animate-text-shine"
+          style={{ backgroundSize: '200% auto' }}
         >
           AKASH S NAIR
         </h1>
         
         {/* Title */}
-        <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-3">
+        <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-300 mb-3 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
           Python Full-Stack Developer
         </p>
         
         {/* Location */}
-        <p className="text-lg md:text-xl text-gray-600 mb-6">
+        <p className="text-lg md:text-xl text-gray-400 mb-6 animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
           Kottayam, Kerala
         </p>
         
         {/* Contact Info */}
-        <div className="flex flex-wrap items-center justify-center gap-3 mb-6 text-gray-700">
-          <span className="px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-md font-medium">
+        <div className="flex flex-wrap items-center justify-center gap-3 mb-6 text-gray-300 animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
+          <span className="px-4 py-2 glass rounded-full shadow-lg font-medium">
             +91 88480 80655
           </span>
-          <span className="text-gray-400">•</span>
+          <span className="text-gray-500">•</span>
           <a 
             href="mailto:akash.bmrskr@gmail.com" 
-            className="px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-md font-medium hover:bg-blue-50 hover:text-blue-600 transition-all duration-200"
+            className="px-4 py-2 glass rounded-full shadow-lg font-medium hover:bg-white/10 transition-all duration-200"
           >
             akash.bmrskr@gmail.com
           </a>
         </div>
         
         {/* Social Links */}
-        <div className="flex items-center justify-center gap-4 mb-8">
+        <div className="flex items-center justify-center gap-4 mb-8 animate-fade-in-up" style={{ animationDelay: '0.9s' }}>
           <a 
             href="https://linkedin.com/in/aakash-s-nair" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="group px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 font-medium text-gray-700 hover:text-blue-600"
+            className="group px-6 py-3 glass rounded-full shadow-lg hover:shadow-xl hover:shadow-pink-500/20 transform hover:scale-105 transition-all duration-200 font-medium text-gray-300 hover:text-pink-400"
             aria-label="LinkedIn profile"
           >
             <span className="flex items-center gap-2">
@@ -64,7 +57,7 @@ function Hero() {
             href="https://github.com/astradevop" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="group px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 font-medium text-gray-700 hover:text-purple-600"
+            className="group px-6 py-3 glass rounded-full shadow-lg hover:shadow-xl hover:shadow-teal-500/20 transform hover:scale-105 transition-all duration-200 font-medium text-gray-300 hover:text-teal-400"
             aria-label="GitHub profile"
           >
             <span className="flex items-center gap-2">
@@ -75,6 +68,16 @@ function Hero() {
             </span>
           </a>
         </div>
+
+        {/* CTA Button */}
+        <a 
+          href="#projects" 
+          className="inline-block px-8 py-4 bg-gradient-to-r from-pink-500 to-teal-400 text-white rounded-full font-semibold text-lg shadow-lg hover:shadow-xl hover:shadow-pink-500/50 transform hover:scale-105 transition-all duration-200 relative overflow-hidden animate-fade-in-up"
+          style={{ animationDelay: '1.1s' }}
+        >
+          <span className="relative z-10">View My Work</span>
+          <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] hover:translate-x-[100%] transition-transform duration-500"></span>
+        </a>
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
