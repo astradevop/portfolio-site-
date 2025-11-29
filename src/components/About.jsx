@@ -33,43 +33,35 @@ function About() {
             {[
               {
                 title: "Languages & Frameworks",
-                content: "Python, Django (5.x), JavaScript (ES6+), React, HTML5, CSS3, Tailwind CSS"
+                content: "Python, Django, JavaScript, React, HTML5, CSS, Tailwind CSS"
               },
               {
                 title: "Frontend",
                 content: "React (functional components, hooks), client-side validation, responsive UI design, accessible markup"
               },
               {
-                title: "Databases & Caching",
-                content: "PostgreSQL, SQLite, MongoDB, Redis, SQL indexing and query optimization"
+                title: "Databases",
+                content: "PostgreSQL, SQLite, MongoDB, SQL indexing and query optimization"
               },
               {
                 title: "APIs & Architecture",
-                content: "RESTful APIs, GraphQL (Apollo), session & token-based authentication (JWT, OAuth2), microservices patterns, event-driven design"
-              },
-              {
-                title: "DevOps & Cloud",
-                content: "Docker, Docker Compose, Kubernetes (basic), AWS (EC2, S3, RDS, Elastic Beanstalk, Lambda), GCP fundamentals, CI/CD (GitHub Actions, GitLab CI, Jenkins), Nginx, Gunicorn"
+                content: "RESTful APIs, session & token-based authentication (JWT, OAuth2), microservices patterns, event-driven design"
               },
               {
                 title: "Testing & QA",
-                content: "pytest, Django test framework, unit & integration testing, end-to-end testing (Cypress / Selenium)"
-              },
-              {
-                title: "Background Tasks & Messaging",
-                content: "Celery, RabbitMQ / Redis queues, scheduled jobs"
+                content: "pytest, Django test framework, unit & integration testing"
               },
               {
                 title: "Security & Best Practices",
-                content: "OWASP fundamentals, HTTPS/TLS, input validation, secrets management (.env, Vault concepts), role-based access control, secure password storage (hashing)"
+                content: "Input validation, secrets management (.env), role-based access control, secure password storage (hashing)"
               },
               {
                 title: "Monitoring & Observability",
-                content: "Logging, Sentry, Prometheus & Grafana basics, application health checks"
+                content: "Logging, application health checks"
               },
               {
                 title: "Other Tools & Practices",
-                content: "Git/GitHub, Postman, Swagger / OpenAPI, Terraform (IaC basics), automated deployments, technical documentation, code review workflows"
+                content: "Git/GitHub, Postman, automated deployments, technical documentation, code review workflows"
               }
             ].map((skill, index) => (
               <div 
@@ -100,12 +92,9 @@ function About() {
               {[
                 "Backend development with Django, including models, serializers, viewsets, and migrations.",
                 "Frontend development using React and Tailwind CSS for interactive user interfaces and responsive layouts.",
-                "API design and implementation: REST endpoints and GraphQL layers where appropriate.",
-                "Containerization and deployment using Docker; orchestration fundamentals with Kubernetes and Docker Compose.",
-                "Cloud deployment and environment configuration on AWS/GCP; static/media storage and managed database integration.",
-                "CI/CD pipeline configuration and maintenance using GitHub Actions / Jenkins; automated testing and deployment workflows.",
-                "Background job processing with Celery and message brokers; task scheduling and error handling.",
-                "Application monitoring, logging, and error tracking using Sentry and Prometheus/Grafana basics.",
+                "API design and implementation: REST endpoints.",
+                "Cloud deployment and environment configuration.",
+                "Application monitoring, logging.",
                 "Adherence to secure development practices and code review processes; maintenance of technical documentation."
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
@@ -145,10 +134,13 @@ function About() {
           </h3>
           <div className="flex flex-wrap gap-4">
             <span className="px-6 py-3 bg-gradient-to-r from-pink-500 to-teal-400 text-white rounded-full font-semibold shadow-lg hover:scale-105 transform transition-transform">
-              Python Programming (Beginner → Intermediate), KELTRON — 2023
+              Python Full-Stack Web Development, SMECLABS — May 2025
             </span>
             <span className="px-6 py-3 bg-gradient-to-r from-teal-400 to-pink-500 text-white rounded-full font-semibold shadow-lg hover:scale-105 transform transition-transform">
               AI Tools & ChatGPT Workshop, Be10x Skills — Apr 2025
+            </span>
+            <span className="px-6 py-3 bg-gradient-to-r from-pink-500 to-teal-400 text-white rounded-full font-semibold shadow-lg hover:scale-105 transform transition-transform">
+              Python Programming (Beginner → Intermediate), KELTRON — 2023
             </span>
           </div>
         </div>

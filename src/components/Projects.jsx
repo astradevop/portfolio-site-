@@ -4,58 +4,61 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Digital Banking Platform",
-      description: "A comprehensive banking platform with multi-step onboarding, KYC workflows, authentication, and admin interfaces. Built with Django REST Framework backend and React frontend.",
+      title: "ASTRALFIN - Digital Banking Platform",
+      description: "A modern neo-banking web application built with Django that allows users to manage bank accounts, transfer money, view transaction history, and apply for loans. Features multi-step onboarding, Auth0 OAuth integration, and comprehensive banking operations.",
       techStack: [
-        "Python", "Django", "Django REST Framework", "React", "Tailwind CSS", 
-        "PostgreSQL", "MongoDB", "Redis", "Celery", "Docker", 
-        "GitHub Actions", "AWS (EC2/S3/RDS)", "OpenAPI"
+        "Python", "Django", "Tailwind CSS", "PostgreSQL (Supabase)", 
+        "Auth0", "ReportLab", "Django ORM", "GitHub Actions"
       ],
       features: [
-        "Multi-step onboarding and KYC workflows with session-managed flows",
-        "Authentication flows supporting mobile verification and token-based authentication (JWT)",
-        "Secure credential handling and hashed PIN storage",
-        "Admin interfaces for KYC review and data management",
-        "Background processing with Celery for asynchronous tasks",
-        "Containerized application with Docker",
-        "API documentation using OpenAPI/Swagger"
+        "Multi-step onboarding with unique Customer ID & Account Number generation",
+        "Authentication with custom user model and Auth0 OAuth integration",
+        "Real-time transactions with atomic balance updates and PDF statements",
+        "Loan processing with EMI calculation, autopay toggle, and pre-closure workflow",
+        "Investment module supporting 5 asset types with profit/loss computation",
+        "Admin interfaces for user, account, transaction, loan, and investment management",
+        "Secure credential handling, CSRF protection, and password hashing"
       ],
-      githubLink: "https://github.com/astradevop",
+      githubLink: "https://github.com/astradevop/ASTRALFIN",
+      liveLink: "https://astralfin.vercel.app",
       projectType: "Internship Project"
     },
     {
       id: 2,
-      title: "Portfolio Website",
-      description: "A responsive portfolio website built with React and Vite, showcasing projects and professional experience. Features modern UI with dark theme and glassmorphism effects.",
+      title: "ExpenseX - Expense Tracker",
+      description: "A full-stack expense management system with CRUD operations, search, category filtering, and optional image uploads. Built with Django REST Framework backend providing RESTful API endpoints.",
+      techStack: [
+        "Python", "Django", "Django REST Framework", "React", 
+        "Tailwind CSS", "PostgreSQL"
+      ],
+      features: [
+        "Full CRUD operations for expense management",
+        "Category filtering and search functionality",
+        "Optional image uploads for expense receipts",
+        "RESTful API endpoints with Django REST Framework",
+        "Responsive UI with React and Tailwind CSS",
+        "User authentication and authorization"
+      ],
+      githubLink: "https://github.com/astradevop/ExpenseX",
+      projectType: "Personal Project"
+    },
+    {
+      id: 3,
+      title: "Personal Portfolio Website",
+      description: "A responsive portfolio website built with React and Vite, showcasing projects and professional experience. Features modern UI with dark theme, glassmorphism effects, and smooth animations.",
       techStack: [
         "React", "Vite", "JavaScript (ES6+)", "CSS3", "HTML5", "Tailwind CSS"
       ],
       features: [
         "Responsive design with Flexbox and Grid",
         "Semantic HTML for accessibility",
-        "Fast build with Vite",
-        "Modern dark theme with glassmorphism",
-        "Smooth animations and transitions"
+        "Fast build with Vite and optimized performance",
+        "Modern dark theme with glassmorphism effects",
+        "Smooth animations and scroll-based transitions",
+        "Interactive parallax effects"
       ],
       githubLink: "https://github.com/astradevop",
-      projectType: "Personal Project"
-    },
-    {
-      id: 3,
-      title: "API Development Project",
-      description: "RESTful API development with Django REST Framework, featuring authentication, database optimization, and comprehensive testing.",
-      techStack: [
-        "Python", "Django", "Django REST Framework", "PostgreSQL", 
-        "Redis", "pytest", "Docker"
-      ],
-      features: [
-        "RESTful API endpoints with authentication",
-        "Database query optimization",
-        "Comprehensive unit and integration testing",
-        "Containerized deployment with Docker",
-        "Redis caching for performance"
-      ],
-      githubLink: "https://github.com/astradevop",
+      liveLink: "https://akashsnair.netlify.app",
       projectType: "Personal Project"
     }
   ]
